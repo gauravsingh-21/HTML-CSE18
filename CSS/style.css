@@ -1,0 +1,10 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: aqua;
+    background-image:url(pexels-valdemaras-d-784301-1647962.jpg) ;
+    background-repeat:repeat-y ;
+    background-position:top right ;
+    background: url(pexels-valdemaras-d-784301-1647962.jpg) no repeat top right 200px ;
+}
+
