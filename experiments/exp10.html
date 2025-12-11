@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Responsive Ecommerce Navbar</title> 
+<style> 
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial} 
+body{background:#f4f4f4} 
+.navbar{ 
+background:white;padding:15px 20px; 
+display:flex;align-items:center;justify-content:space-between; 
+box-shadow:0 2px 5px rgba(0,0,0,0.1);position:sticky;top:0; 
+} 
+.logo{font-size:24px;font-weight:bold;color:#333} 
+.search-box input{ 
+width:300px;padding:8px 12px; 
+border:1px solid #ccc;border-radius:4px; 
+} 
+.nav-links{list-style:none;display:flex;gap:20px} 
+.nav-links a{ 
+text-decoration:none;color:#333;font-size:16px;transition:.3s; 
+} 
+.nav-links a:hover{color:#ff6600} 
+.menu-btn{display:none;font-size:26px;cursor:pointer} 
+.mobile-menu{ 
+display:none;flex-direction:column;background:white;width:100%; 
+box-shadow:0 2px 5px rgba(0,0,0,0.1) 
+} 
+.mobile-menu a{ 
+padding:12px;border-bottom:1px solid #eee; 
+text-decoration:none;color:#333;font-size:18px; 
+} 
+.mobile-menu a:hover{background:#f7f7f7} 
+.mobile-menu.open{display:flex} 
+@media (max-width:900px){ 
+.search-box input{width:200px;} 
+} 
+@media (max-width:700px){ 
+.search-box{display:none;} 
+.nav-links{display:none;} 
+.menu-btn{display:block;} 
+} 
+</style> 
+</head> 
+<body> 
+<nav class="navbar"> 
+<div class="logo">ShopKart</div> 
+<div class="search-box"> 
+<input type="text" placeholder="Search for products..."> 
+</div> 
+  <ul class="nav-links"> 
+    <li><a href="#">Home</a></li> 
+    <li><a href="#">Categories</a></li> 
+    <li><a href="#">Orders</a></li> 
+    <li><a href="#">Cart</a></li> 
+    <li><a href="#">Profile</a></li> 
+  </ul> 
+ 
+  <div class="menu-btn">☰</div></nav> 
+ 
+<div class="mobile-menu"> 
+  <a href="#">Home</a> 
+  <a href="#">Categories</a> 
+  <a href="#">Orders</a> 
+  <a href="#">Cart</a> 
+  <a href="#">Profile</a> 
+</div> 
+ 
+<script> 
+const menuBtn = document.querySelector(".menu-btn"); 
+const mobileMenu = document.querySelector(".mobile-menu"); 
+ 
+menuBtn.addEventListener("click", () => { 
+  mobileMenu.classList.toggle("open"); 
+}); 
+</script> 
+ 
+</body> 
+</html> 
+ 

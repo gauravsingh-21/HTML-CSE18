@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<title>Product Page</title> 
+<style> 
+body { 
+font-family: "Poppins", Arial, sans-serif; 
+margin: 0; 
+background: linear-gradient(135deg, #f0f0f0, #dfe9f3); 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+height: 100vh; 
+} 
+.product-card { 
+background: #ffffff; 
+padding: 25px; 
+width: 330px; 
+border-radius: 20px; \ 
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+text-align: center; 
+transition: transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+.product-card:hover { 
+transform: translateY(-8px); 
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18); 
+} 
+    .product-card img { 
+      width: 100%; 
+      height: auto; 
+      border-radius: 15px; 
+    } 
+ 
+    .product-card h2 { 
+      margin: 15px 0 5px; 
+      font-size: 24px; 
+      color: #222; 
+    } 
+ 
+    .price { 
+      font-size: 22px; 
+      color: #0a8f32; 
+      margin: 10px 0; 
+      font-weight: bold; 
+    } 
+ 
+    .desc { 
+      color: #555; 
+      margin-bottom: 20px; 
+      font-size: 14px; 
+    } 
+ 
+    .btn { 
+      background: #ff6600; 
+      color: white; 
+      padding: 12px 20px; 
+      border: none; 
+      cursor: pointer; 
+border-radius: 30px; 
+font-size: 16px; 
+font-weight: bold; 
+transition: 0.3s; 
+} 
+.btn:hover { 
+background: #e65c00; 
+transform: scale(1.05); 
+} 
+.rating { 
+margin: 10px 0; 
+color: #f4b400; 
+font-size: 20px; 
+} 
+</style> 
+</head> 
+<body> 
+<button id="toggleMode" class="btn" style="position: absolute; top: 20px; right: 20px;">Toggle 
+Dark Mode</button> 
+<div class="product-container" style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: 
+center;"> 
+<div class="product-card"> 
+<img src="https://i.ebayimg.com/images/g/B9IAAOSwGP5ilh4I/s-l400.jpg" alt="Product Image" 
+/> 
+<h2>Wireless Headphones</h2> 
+<div class="rating">★★★★★</div> 
+<p class="price">₹1999</p> 
+<p class="desc">High-quality sound, noise cancellation, premium comfort, and long battery 
+backup.</p> 
+<button class="btn">Add to Cart</button> 
+</div> 
+<div class="product-card"> 
+<img 
+src="https://inspireonline.in/cdn/shop/files/iPhone_16_Ultramarine_PDP_Image_Position_1__en
+IN_db94e554-7c33-449b-bc12-3769c1f8a93b.jpg?v=1727247786" alt="Smartphone" /> 
+<h2>Smartphone Pro Max</h2> 
+<div class="rating">★★★★☆</div> 
+<p class="price">₹74,999</p> 
+<p class="desc">Stunning display, powerful processor, and advanced camera system.</p> 
+<button class="btn">Add to Cart</button> 
+</div> 
+</div> 
+</body> 
+</html> 

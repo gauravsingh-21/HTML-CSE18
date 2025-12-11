@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Grid</title>
+  <style>
+    html, * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main {
+      width: 100%;
+      min-height: 100vh;
+      background-color: rgb(26, 185, 185);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 equal horizontal columns */
+      gap: 10px;
+      padding: 10px;
+    }
+    .box {
+      background-color: rgb(208, 234, 37);
+      width: auto;
+      height: auto;
+      display: grid;
+      place-items: center; /* centers text inside */
+      font-size: 24px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </main>
+</body>
+</html>

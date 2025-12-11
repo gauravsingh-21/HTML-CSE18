@@ -28,14 +28,39 @@
      height:500px ;
      margin:0 auto ;
      background-color: lightgrey;
+     gap: 10px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-content: last baseline;
     }
     .box{
-        width: 100px;
-        height: 65px;
+        width: 200px;
+        height: 200px;
         margin: 0;
-        background-color: tomato;
+        background-color: rgb(86, 37, 28);
  
     }
+    section{
+        width: 900px;
+        height: 300px;
+        background-color: lightblue;
+        margin: 10px auto;
+        display: flex;
+        gap: 10px;
+
+    }
+    #left {
+        flex-grow: 1;
+        background-color: lightgray;
+
+    }
+  #right{
+    flex-grow: 1;
+    background-color: lightskyblue;
+  }
+    
 </style>
 </head>
 <body>
@@ -47,8 +72,13 @@
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" style ="height: 320px;">0</div>
    </main> 
+
+   <section>
+    <div id ="left">left</div>
+    <div id ="right">right</div>
+   </section>
    <!-- <img src="/2023-Porsche-911-GT3-R-Rennsport-004-1080 (1).jpg" alt="error" width="1000px" height="500px">
    <p>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deleniti.
