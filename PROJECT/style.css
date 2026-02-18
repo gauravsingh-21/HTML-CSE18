@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+body {
+  background-color: #f3f3f3;   /* light grey (Amazon-style) */
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar{
+    height: 130px;
+    background-color: #0c0c0c;
+    color: rgb(180, 203, 189);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo{
+    height: 120px;
+    width: 100px;
+}
+
+.logo{
+    background-image: url("logo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:120px ;
+    width: 200px
+}
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.8rem ;
+    margin-left: 15px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    background-color: pink;
+    justify-content: space-evenly ;
+    width: 800px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 3px ;
+
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 120px;
+    text-align: center;
+    font-size: 30px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: none;
+}
+.search-input{
+    width: 700px;
+    font-size: 25px;
+    border: none;
+
+}
+.search-icon{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(49, 200, 180);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #0f1111;
+}
+.nav-search:hover{
+    border: 6px solid rgb(255, 145, 0);
+}
+
+p .navbar {
+    font-size: 30px;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.nav-cart i{
+    font-size: 28px;
+}
+.nav-cart{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.panel {
+  height: 100px;
+  background-color: #0f1111;
+  color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.panel-option {
+  display: flex;
+  gap: 20px;
+  font-size: 0.55rem;
+}
+
+.panel-option p {
+  margin: 0;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.panel-option p:hover {
+  background-color: #232f3e;
+  color: #f3a847;
+}
+
+.panel-deals {
+  font-size: .95rem;
+  font-weight: 700;
+}
+
+.hero-section{
+    background-image: url(hero.jpg);
+        height: 400px;
+        background-size: cover;
+}
+.shop-section{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    background-color:#e7a579 ;
+}
+.box{
+    border: 2px solid black;
+    height: 400px;
+    width: 18%;
+    background-color: white;
+    padding: 20px 30px 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.box:hover{
+    transition: 0.1s ease-in-out;
+    transform: scale(1.09);
+}
+.box-img{
+    height: 320px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.box-content{
+    margin-left: 1px;
+    margin-right:1px ;
+}
+.box-content p {
+    color: rgb(42, 163, 190);
+}
+footer {
+    width: 100%;                 /* ✅ full screen width */
+    background-color: #232f3e;   /* Amazon dark footer */
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 60px;            /* space from content */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* footer text */
+footer p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;   
+  padding: 0 40px;
+}
+
+.footer-column {
+  width: 22%;                      
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+.footer-column a {
+  display: block;                  
+  font-size: 14px;
+  color: #dddddd;
+  margin-bottom: 10px;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer-column a:hover {
+  color: #f3a847;
+  text-decoration: underline;
+}
+
+
+/* Reset default margins/paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.copyright-footer {
+  position: fixed;   /* Fix it to viewport */
+  bottom: 0;         /* Stick to bottom */
+  left: 0;           /* Align left */
+  width: 100%;       /* Full width */
+  background-color: #dbd2d282; /* Amazon dark footer */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  z-index: 1000;     /* Keep it above other content */
+}
+
+/* Optional: add padding-bottom to main content so it doesn't hide behind footer */
+main {
+  padding-bottom: 50px; /* same or more than footer height */
+}
+
+
+p{
+    font-size: x-large;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    line-height: 42px;
+}

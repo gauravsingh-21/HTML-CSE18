@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#e3e6e6;
+}
+
+
+.navbar{
+    background:#131921;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#f3a847;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    display:block;
+}
+
+.menu li a:hover{
+    background:#232f3e;
+}
+
+/* DROPDOWN */
+.dropdown{
+    display:none;
+    position:absolute;
+    background:white;
+    top:40px;
+    min-width:160px;
+    z-index:1;
+}
+
+.dropdown a{
+    color:black;
+}
+
+.menu li:hover .dropdown{
+    display:block;
+}
+
+/* PRODUCTS */
+.products{
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+}
+
+.card button{
+    background:#ffd814;
+    border:none;
+    width:100%;
+    padding:8px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
